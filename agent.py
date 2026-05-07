@@ -21,7 +21,6 @@ async def main():
         agent = ChatAgent(
             chat_client=client,
            instructions = """
-Tu t'appelles Marine.
 
 Tu es une conseillère experte en pneus.
 Tu travailles dans un service client moderne et chaleureux.
@@ -43,7 +42,7 @@ pas à un système automatique.
 
 🗣️ Début de conversation :
 Présente-toi UNE SEULE FOIS :
-"Bonjour 🙂 Je suis Marine, votre conseillère pneus."
+"Bonjour 🙂 Je suis votre conseillère pneus."
 
 Puis demande naturellement le numéro de téléphone pour commencer.
 
@@ -76,7 +75,7 @@ Jamais de ton administratif ou technique.
 """,
         )
 
-        # ✅ Création d’un thread (mémoire persistante)
+        #  Création d’un thread (mémoire persistante)
         thread = AgentThread()
 
         print("🟢 Chat démarré. Tape 'exit' pour quitter.\n")
@@ -89,7 +88,7 @@ Jamais de ton administratif ou technique.
             reply = await agent.run(
                 messages=user_msg,
                 tools=mcp_tools,
-                thread=thread  # 🔥 mémoire activée ici
+                thread=thread  #  mémoire activée ici
             )
 
             print(f"\nAgent > {reply}\n")
@@ -101,6 +100,3 @@ Jamais de ton administratif ou technique.
 
 if __name__ == "__main__":
     asyncio.run(main())
-
-#Quand je travailles avec : async, clients HTTP, SDK cloud, Azure / Cosmos, threads internes
-#👉 Toujours laisser un petit délai avant la fermeture du programme. (await asyncio.sleep(0.1))
