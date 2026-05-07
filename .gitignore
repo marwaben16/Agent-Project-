@@ -1,0 +1,14 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Variables sensibles 
+.env*
+
+# Environnement virtuel Python
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+README.md
+
+# Cache Python
+__pycache__/
+*.pyc
