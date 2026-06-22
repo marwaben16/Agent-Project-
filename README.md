@@ -65,7 +65,7 @@ COSMOS_CUSTOMERS_CONTAINER=customers
 # Azure OpenAI (requis par agent_framework.azure)
 AZURE_OPENAI_ENDPOINT=https://<endpoint>.openai.azure.com/
 AZURE_OPENAI_API_KEY=<clé>
-AZURE_OPENAI_DEPLOYMENT= <ton déploiement>
+AZURE_OPENAI_DEPLOYMENT= <ton-déploiement>
 AZURE_OPENAI_API_VERSION=<date> preview
 ```
 
