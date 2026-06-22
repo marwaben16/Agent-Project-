@@ -101,7 +101,7 @@ Agent > Bonjour 🙂 Je suis votre conseillère pneus.
 
 ---
 
-## Catalogue Cosmos — format attendu
+## Catalogue Cosmos — en format JSON 
 
 Chaque document dans le container `catalog` doit ressembler à ça :
 
